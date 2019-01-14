@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form action="/exit" >
+		<input type="submit" name="exit" value="sign out">
+	</form>
+		<div>
+		<form action="/add" method="post">
+	<select>
+		#for(x:aaa)
+  <option value=#(x.get('username'))>#(x.get('username'))</option>
+  		#end
+
+	</select>
+	<input type="submit" name="submit" value="submit">
+				</form>
+		</div>
+<div>
+	<h1>HelloWorld!!!</h1>
+	#include("findsub.html")
+	
+</div>
+</body>
+</html>	

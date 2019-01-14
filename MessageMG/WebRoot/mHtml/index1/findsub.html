@@ -1,0 +1,24 @@
+<h2>发布总表</h2>
+
+<table  border="2" >
+	<thead>
+	<th style="width: 70px">序号</th>
+	<th style="width: 120px">time</th>
+	<th style="width: 120px">发布人</th>
+	<th>标题</th>
+	<th style="width: 150px">操作</th>
+</thead>
+<tbody >
+	#for(x:list)
+	<tr>
+		<th scope="row">#(x.get("newsid"))</th>
+			
+		<td>#(x.get("newstime"))</td>
+		<td>#(x.get("isuser"))</td>
+		<td>#(x.get("title"))</td>
+		<td>操作</td>
+		
+	</tr>	
+	#end
+</tbody>		
+</table>
